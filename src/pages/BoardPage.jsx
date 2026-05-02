@@ -104,7 +104,7 @@ export default function BoardPage() {
 
   const handleCardClick  = (skill) => setSelectedSkillId(skill.id)
   const handleDrawerClose = () => setSelectedSkillId(null)
-  const handleReset       = () => goTo('/board', { replace: true, state: null })
+  const handleReset       = () => goTo('/')
 
   const drawerSkill = selectedSkillId ? skills.find(s => s.id === selectedSkillId) : null
 
